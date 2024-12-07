@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: call common python steps
+    - name: call shared common python steps
       uses: leading-ai/leading-shared-workflows/python-steps@composite
       with:
         PYTHON_VERSION: ${{ matrix.python-version }} 
