@@ -27,7 +27,8 @@ jobs:
     - name: call common python steps
       uses: leading-ai/leading-shared-workflows/python-steps@composite
       with:
-        PYTHON_VERSION: ${{ matrix.python-version }} 
+        PYTHON_VERSION: ${{ matrix.python-version }}
+        RUN_UNIT_TESTS: true 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
