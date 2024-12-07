@@ -20,8 +20,8 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: call common python steps
-      uses: leading-ai/leading-shared-workflows/python-steps@main
+    - name: call common python steps actions
+      uses: leading-ai/leading-shared-workflows/.github/actions/python-steps@new_workflow
       with:
         PYTHON_VERSION: ${{ matrix.python-version }}
         RUN_UNIT_TESTS: true 
